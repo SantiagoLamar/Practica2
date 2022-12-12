@@ -6,13 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./component.component.css']
 })
 export class ComponentComponent {
-  numero:any=0;
-  sueldos=[1700, 1600, 1900];
-
+  Nombre:any= " ";
+  Apellido:any= " ";
+  Email:any= " ";
+  Contrasena :any= " ";
+  Confirmar:any= " ";
+  Telefono:any= " ";
 
 almacenar ()
 {
- localStorage.setItem('Valor total', this.numero)
+ localStorage.setItem('Valor total', this.Nombre)
+ localStorage.setItem('Valor total', this.Apellido)
+ localStorage.setItem('Valor total', this.Email)
+ localStorage.setItem('Valor total', this.Contrasena)
+ localStorage.setItem('Valor total', this.Telefono)
 localStorage.setItem('mensaje', 'almacenado')
 }
 
