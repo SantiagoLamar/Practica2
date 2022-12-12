@@ -1,1 +1,17 @@
-<p>component works!</p>
+<h1>TRABAJO 2</h1>
+<input [(ngModel)]="numero">
+<br>
+<strong *ngIf="numero>3">El numero es mayor a 3</strong>
+<strong *ngIf="numero==3">El numero es 3</strong>
+<strong *ngIf="numero<3">El numero es  menor a 3</strong>
+<p></p>
+<tr *ngFor="let sueldo of sueldos">
+    <td>{{sueldo}}</td>
+</tr>
+<ul *ngFor="let sueldo of sueldos">
+    <li>{{sueldo}}</li>
+</ul>
+<div *ngFor="let sueldo of sueldos">
+    <div>Sueldos: {{sueldo}}</div>
+</div>
+<button (click)="almacenar()">  Almacenar</button>

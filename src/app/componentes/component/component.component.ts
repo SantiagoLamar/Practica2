@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./component.component.css']
 })
 export class ComponentComponent {
+  numero:any=0;
+  sueldos=[1700, 1600, 1900];
+
+
+almacenar ()
+{
+ localStorage.setItem('Valor total', this.numero)
+localStorage.setItem('mensaje', 'almacenado')
+}
+
+Mostrar ()
+{
+localStorage.getItem ('Valor  total')
+}
 
 }
+
