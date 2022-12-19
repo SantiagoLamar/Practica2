@@ -1,39 +1,47 @@
-<div  style="background-color:  #8258FA ;  ">
-
-    <h1>TRABAJO 2</h1>
-<hr>
-
-<p> Nombres: 
-    <input [(ngModel)]="Nombre">
-    <br>
-
-</p>
-
-<p> Apellidos:
-    <input  [(ngModel)]="Apellido">
-<br>
-</p>
-
-<p> Email:
-    <input  [(ngModel)]="Email">
-<br>
-</p>
-
-<p> Contraseña:
-    <input  [(ngModel)]="Contrasena">
-<br>
-</p>
-
-<p> Confirmar:
-    <input  [(ngModel)]="Confirmar">
-<br>
-</p>
-
-<p> Telefono:
-    <input  [(ngModel)]="Telefono">
-<br>
-</p>
 
 
-<button (click)="almacenar()">  Almacenar</button>
-</div>
+<body  style="text-align: center;"> 
+
+    <h4> Formulario </h4>
+
+        <section style="text-align: center;">
+            
+            <p> Nombres: 
+                <input class="Controles"  [(ngModel)]="Nombre"  type="text" name="Nombres" id="nombres" placeholder="Ingrese su Nombres" >
+            
+                <br>
+            
+            </p>
+            
+            <p> Apellidos:
+                <input   class="Controles"[(ngModel)]="Apellido" type="text" name="Nombres" id="nombres" placeholder="Ingrese sus Apellidos" >
+            <br>
+            </p>
+            
+            <p> Email:
+                <input  class="Controles" [(ngModel)]="Email" type="text" name="Nombres" id="nombres" placeholder="Ingrese su dirreccio de Email" >
+            <br>
+            </p>
+            
+            <p> Contraseña:
+                <input  class="Controles"  [(ngModel)]="Contrasena" type="text" name="Nombres" id="nombres" placeholder="Ingrese su Contraseña" >
+            <br>
+            </p>
+            
+            <p> Confirmar:
+                <input  class="Controles"  [(ngModel)]="Confirmar" type="text" name="Nombres" id="nombres" placeholder="Confirme su contraseña" >
+            <br>
+            </p>
+            
+            <p> Telefono:
+                <input  class="Controles" [(ngModel)]="Telefono" type="text" name="Nombres" id="nombres" placeholder="Ingrese su Telefono" >
+            <br>
+            </p>
+            <button (click)= "Imprimir ()"> Imprimir </button>
+            
+            <button (click)= "almacenar()"  [routerLink]="['home']">  Almacenar</button>
+            
+            
+        </section>
+
+</body>

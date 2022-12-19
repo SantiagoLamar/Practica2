@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { EnvioDeDatosService } from 'src/app/envio-de-datos.service';
 
 @Component({
   selector: 'app-component1',
@@ -6,14 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./component1.component.css']
 })
 export class Component1Component {
-constructor(){}
+constructor(  private Envio: EnvioDeDatosService){}
 resultado : any
 mensaje: any
-suma: number=0
+@Input() name: any;
 
 recuperar()
 {
   this.resultado= localStorage.getItem('valor_total');
   this.mensaje =localStorage.getItem('mensaje')
 }
+
 }
