@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { EnvioDeDatosService } from 'src/app/envio-de-datos.service';
 
 @Component({
@@ -17,21 +17,31 @@ export class ComponentComponent {
 
 almacenar ()
 {
- localStorage.setItem('Valor', this.Nombre)
- localStorage.setItem('Valor ', this.Apellido)
- localStorage.setItem('Valor ', this.Email)
- localStorage.setItem('Valor ', this.Contrasena)
- localStorage.setItem('Valor ', this.Telefono)
+ localStorage.setItem('1', this.Nombre)
+ localStorage.setItem('2', this.Apellido)
+ localStorage.setItem('3', this.Email)
+ localStorage.setItem('4', this.Contrasena)
+ localStorage.setItem('5', this.Confirmar)
+ localStorage.setItem('6', this.Telefono)
 }
+ ngOnInit () : void {
+  
+ }
 
 Imprimir ()
 {
   //this.Envio.Disparador.emit({data: this.dataentrarte})
 }
 
+
 Mostrar ()
 {
-localStorage.getItem ('Valor  ')
+localStorage.getItem ('1')
+localStorage.getItem ('2')
+localStorage.getItem ('3')
+localStorage.getItem ('4')
+localStorage.getItem ('5')
+localStorage.getItem ('5')
 }
 
 constructor ( private Envio: EnvioDeDatosService) {}

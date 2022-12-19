@@ -1,5 +1,4 @@
 
-
 <body  style="text-align: center;"> 
 
     <h4> Formulario </h4>
@@ -7,40 +6,16 @@
 
         <section style="text-align: center;">
             
-            <p> Nombres: 
-                <input class="Controles"    type="text" name="Nombres" id="nombres" placeholder="Ingrese su Nombres" >
             
-                <br>
+            <div>  Nombres:  {{resultado}}</div>
+            <div>  Apellidos:  {{resultado1}}</div>
+            <div>  Email:  {{resultado2}}</div>
+            <div>  Contraseña:  {{resultado3}}</div>
+            <div>  Confirmacion:  {{resultado4}}</div>
+            <div>  Telefono:  {{resultado5}}</div>
             
-            </p>
-            
-            <p> Apellidos:
-                <input   class="Controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese sus Apellidos" >
-            <br>
-            </p>
-            
-            <p> Email:
-                <input  class="Controles" type="text" name="Nombres" id="nombres" placeholder="Ingrese su dirreccio de Email" >
-            <br>
-            </p>
-            
-            <p> Contraseña:
-                <input  class="Controles"   type="text" name="Nombres" id="nombres" placeholder="Ingrese su Contraseña" >
-            <br>
-            </p>
-            
-            <p> Confirmar:
-                <input  class="Controles" type="text" name="Nombres" id="nombres" placeholder="Confirme su contraseña" >
-            <br>
-            </p>
-            
-            <p> Telefono:
-                <input  class="Controles"  type="text" name="Nombres" id="nombres" placeholder="Ingrese su Telefono" >
-            <br>
-            </p>
-            <button > Imprimir </button>
-            
-            <button  [routerLink]="['home']">  Almacenar</button>
+            <button  [routerLink]="['']">  Inicio</button>
             
             
         </section>
+    </body>
